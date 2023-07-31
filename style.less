@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #BFC8E5;
+    font-family: poppins;
+}
+
+.container {
+    &__inner {
+        max-width: 1440px;
+        background-color: white;
+        margin: auto;
+        padding: 100px;
+        border-radius: 16px;
+    }
+
+    &__header {
+        margin-bottom: 70px;
+
+        &-heading {
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            color: black;
+            margin-bottom: 24px;
+
+        }
+
+        &__nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__search {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px;
+            width: 327px;
+            border: 1px solid #BFC8E5;
+        }
+
+        &__input {
+            width: 100%;
+            // padding: 5px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+
+        }
+
+        &-link a {
+            padding: 16px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            color: black;
+            border-radius: 8px;
+
+
+            &:hover,
+            &:focus,
+            &.sidearm-hover {
+                border-radius: 8px;
+                background: #849FFF;
+                transition: 0.2s all;
+                color: white;
+
+            }
+        }
+
+    }
+
+    &__content {
+        display: flex;
+        align-items: stretch;
+        gap: 16px;
+        flex-wrap: wrap;
+
+
+        &-user1 {
+            display: flex;
+            gap: 16px;
+            padding: 24px;
+            flex: 1 1 330px;
+            height: 208px;
+            border-radius: 16px;
+            background: #FBFCFF;
+            border: 1px solid white;
+
+            &:hover,
+            &:focus {
+                border: 1px solid #BFC8E5;
+                box-shadow: 0px 8px 23px 0px rgba(218, 224, 249, 0.70);
+                cursor: pointer;
+            }
+
+            img {
+                height: 97px;
+                width: 97px;
+                object-fit: contain;
+            }
+        }
+
+        &-details {
+            margin-top: 20px;
+        }
+
+        &-name {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+        }
+
+        &-tagline {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        &-hobbies {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            flex-wrap: wrap;
+            margin-top: 16px;
+
+            &-list {
+                padding: 0 8px;
+                background: white;
+
+                border-radius: 10px;
+                border: 1px solid #BFC8E5;
+
+
+                a {
+                    color: #516FD4;
+                    font-family: Poppins;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
